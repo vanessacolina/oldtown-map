@@ -6,8 +6,8 @@ const config = {
   accessToken:
     'pk.eyJ1IjoidmFuZXNzYWNvbGluYSIsImEiOiJja3Ntb25ucjgweHppMm9wMTYybWR1cG5uIn0.tPz87IS5OXtIg-sgztj29g',
   CSV: 'https://docs.google.com/spreadsheets/d/1W5knONqNhFpqWvaf93PnIVE80VBCRLFNkydgSje7t_Y/gviz/tq?tqx=out:csv&sheet=OTIMap',
-  center: [-120.234, 47.398],
-  zoom: 6,
+  center: [-77.045489, 38.807313],
+  zoom: 10,
   title: 'Old Town Illustrated',
   description:
     'You can search by address to sort the list below by distance. You can also filter the list by language support options, which days a location is open, and whether they have devices to use to complete the survey by phone or online.',
