@@ -4,8 +4,8 @@
 const config = {
   style: 'mapbox://styles/mapbox/light-v10',
   accessToken:
-    'pk.eyJ1IjoibWFwYm94LWNvbW11bml0eSIsImEiOiJja2tkN21jcjAwMG51MnBxdHAxemdueGpzIn0.e0IzLkytGq4pcGGieP8KNA',
-  CSV: './Sample_Data.csv',
+    'pk.eyJ1IjoidmFuZXNzYWNvbGluYSIsImEiOiJja3Ntb25ucjgweHppMm9wMTYybWR1cG5uIn0.tPz87IS5OXtIg-sgztj29g',
+  CSV: 'https://docs.google.com/spreadsheets/d/1W5knONqNhFpqWvaf93PnIVE80VBCRLFNkydgSje7t_Y/gviz/tq?tqx=out:csv&sheet=OTIMap',
   center: [-120.234, 47.398],
   zoom: 6,
   title: 'Replace with your title',
