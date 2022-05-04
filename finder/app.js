@@ -29,9 +29,10 @@ function createPopup(currentFeature) {
   const popups = document.getElementsByClassName('mapboxgl-popup');
   /** Check if there is already a popup on the map and if so, remove it */
   if (popups[0]) popups[0].remove();
+  console.log(currentFeature.properties);
   new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<h3>' + currentFeature.properties[config.popupInfo] + '</h3>')
+    .setHTML('<div style="display:flex;flex-direction:column;align-items:center"><img src="'+currentFeature.properties['Illustration']+'" width="300px" /><h3>' + currentFeature.properties['Address'] + '</h3></div>')
     .addTo(map);
 }
 
@@ -54,18 +55,11 @@ function buildLocationList(locationData) {
     link.className = 'title';
     link.id = 'link-' + prop.id;
     link.innerHTML =
-      '<p style="line-height: 1.25">' + prop[columnHeaders[0]] + '</p>';
+      '<div style="display:flex; align-items:center"><img src="'+prop[columnHeaders[1]]+'" height="60px"/><p style="line-height: 1.25">' + prop[columnHeaders[0]] + '</p></div>';
 
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement('div'));
     details.className = 'content';
-
-    for (let i = 1; i < columnHeaders.length; i++) {
-      const div = document.createElement('div');
-      div.innerText += prop[columnHeaders[i]];
-      div.className;
-      details.appendChild(div);
-    }
 
     link.addEventListener('click', function () {
       const clickedListing = location.geometry.coordinates;
