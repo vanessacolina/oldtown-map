@@ -12,7 +12,7 @@ const config = {
   description:
     'You can search by address to sort the list below by distance. You can also filter the list by language support options, which days a location is open, and whether they have devices to use to complete the survey by phone or online.',
   sideBarInfo: ['Address', 'Illustration'],
-  popupInfo: ['Address'],
+  popupInfo: ['Address', 'Illustration'],
   filters: [
     {
       type: 'dropdown',
