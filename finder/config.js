@@ -16,44 +16,17 @@ const config = {
   filters: [
     {
       type: 'dropdown',
-      title: 'Languages supported: ',
-      columnHeader: 'Languages',
+      title: 'Year built: ',
+      columnHeader: 'Year',
       listItems: [
-        'Amharic',
-        'ASL',
-        'Cambodian',
-        'Chinese',
-        'Danish',
-        'English',
-        'French',
-        'German',
-        'Greek',
-        'Hindi',
-        'Italian',
-        'Japanese',
-        'Korean',
-        'Language Line Services',
-        'Norwegian',
-        'Oriya',
-        'Portuguese',
-        'Punjabi',
-        'Russian',
-        'Somali',
-        'Spanish',
-        'Swedish',
-        'Tagalog',
-        'Thai',
-        'Tigrinya',
-        'Tongan',
-        'Vietnamese',
-        'Ukranian',
+        '1840',
       ],
     },
     {
       type: 'checkbox',
-      title: 'Devices available: ',
-      columnHeader: 'Devices_available', // Case sensitive - must match spreadsheet entry
-      listItems: ['Computer', 'Wi-Fi', 'Adaptive Laptops'], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
+      title: 'Info available: ',
+      columnHeader: 'Info_available', // Case sensitive - must match spreadsheet entry
+      listItems: ['Portrait', 'Story'], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
     },
     {
       type: 'dropdown',
